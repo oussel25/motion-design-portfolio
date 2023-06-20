@@ -425,8 +425,12 @@ main {
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
+  
 }
-
+.contact-info a {
+  
+  color: #8a8989ad;
+}
 .contact-title {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
@@ -441,6 +445,7 @@ main {
 
 .contact-info address {
   font-style: normal;
+  
 }
 
 .social-list {
@@ -545,6 +550,7 @@ main {
 }
 .about-text p {
   margin-bottom: 15px;
+  font-family: monospace;
 }
 
 .facts-list {
@@ -1077,8 +1083,9 @@ main {
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
-  margin-bottom: 10px;
+  gap: 14px;
+    margin-bottom: 32px;
+    margin-top: 80px;
 }
 
 .project-item {
@@ -1088,6 +1095,18 @@ main {
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
+}
+.video-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+.video-container.iframe{
+  border-radius: 10px;
 }
 
 @keyframes scaleUp {
@@ -2045,6 +2064,7 @@ form .btn2{
   .info-content .name {
     white-space: nowrap;
     text-align: center;
+    margin-left: -11px;
   }
 
   .info-content .title {
